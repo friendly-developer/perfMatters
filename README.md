@@ -7,6 +7,7 @@ This also deals with managing RAIL process and to optimize it
 ## Concepts Implemented for this:
 * Build Tools
 * DEV Tools(Chrome)
+* Node and npm
  
 
 ## Steps to run
