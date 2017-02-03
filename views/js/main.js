@@ -542,6 +542,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
+  iHeight = window.screen.height;
   var movingPizzas= document.getElementById("movingPizzas1");
   for (var i = 0,elem; i < 25; i++) {
     elem = document.createElement('img');
