@@ -36,7 +36,7 @@ header p span { font-size: 0.8em; font-weight: normal;}
 i { float:left; }
 .content { padding: 1em 1em; }
 .content li { list-style-type: none; font-size: 1.1em;}
-li i {padding-right: 1em; }
+
 li p { font-size: 0.9em; font-style: italic; }
 
 footer {
@@ -55,7 +55,7 @@ footer span { float: right; font-style: italic; }
   width:100px;
 }
 .sprite {
-    background-image: url(spritesheet.png);
+    background-image: url(img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -80,7 +80,7 @@ footer span { float: right; font-style: italic; }
 
 .sprite-pizzeria {
     width: 100px;
-    height: 98px;
+    height: 85px;
     background-position: -115px -76px;
 }
 
