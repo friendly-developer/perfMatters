@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var iHeight = window.screen.height;
-  var rows = iHeight / s;
+  var rows = (iHeight / s)*cols;
   //modified to element id from queryselector
   var movingPizzas= document.getElementById("movingPizzas1");
   //console.log(rows,' are the number of rows')
