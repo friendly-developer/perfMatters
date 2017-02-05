@@ -12,7 +12,17 @@ var htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 var cleanCSS = require('gulp-clean-css');
 var livereload = require('gulp-livereload');
+var gulpif = require('gulp-if');
+var sprity = require('sprity');
 
+// generate sprite.png and _sprite.scss
+gulp.task('sprites', function () {
+  return sprity.src({
+    src: './img/*.{png,jpg}',
+    style: '.css/style.css'
+  })
+  .pipe(gulpif('*.png', gulp.dest('./dist/img/'), gulp.dest('./dist/css/')))
+});
 
 gulp.task('clean', function () {
   return gulp.src('dist', {read: false})
