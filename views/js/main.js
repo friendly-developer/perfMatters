@@ -546,10 +546,11 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var iHeight = window.screen.height;
+  var rows = iHeight / s;
   //modified to element id from queryselector
   var movingPizzas= document.getElementById("movingPizzas1");
-  //
-  for (var i = 0,elem; i < 25; i++) {
+  //console.log(rows,' are the number of rows')
+  for (var i = 0,elem; i < rows; i++) {
     elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
